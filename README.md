@@ -1,8 +1,6 @@
-### CraftManager
-
 [![Discord](https://img.shields.io/discord/1076553697192071268.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/pocketmine) 
 
-### Description
+### CraftManager
 
 Allows you to create or delete crafts ! Works with the new pocketmine crafting system (>= 4.18)
 
@@ -41,6 +39,5 @@ new:
     output: "283:0:1"
 
     # Are the crafts for the basic item removed?
-    remove-old-crafts: true```
-
-    
+    remove-old-crafts: true
+```

@@ -46,7 +46,7 @@ class Base extends PluginBase
                         $id = $split[0];
                         $meta = $split[1] ?? 0;
 
-                        if ($item->getId() === $id) {
+                        if ($item->getId() == $id) {
                             if (0 > $meta && $meta === $item->getId()) {
                                 continue;
                             }
