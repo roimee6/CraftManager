@@ -1,0 +1,11 @@
+name: mCraftManager
+main: CraftManager\Base
+
+src-namespace-prefix: CraftManager
+
+author: MaXoooZ
+api: [ 4.0.0 ]
+version: 1.0.0
+
+# Plugin shop
+website: https://discord.gg/pocketmine
