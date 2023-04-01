@@ -1,4 +1,5 @@
-[![Discord](https://img.shields.io/discord/1076553697192071268.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/pocketmine) 
+[![Discord](https://img.shields.io/discord/1076553697192071268.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/pocketmine)
+
 
 ### CraftManager
 
@@ -41,3 +42,11 @@ new:
     # Are the crafts for the basic item removed?
     remove-old-crafts: true
 ```
+
+### Features
+
+| Feature | CraftManager | CreateDelCraft | CraftingPlus | CustomCraftDraz | SimpleCustomCraft |
+|-----------------------------------|-----------------|------------|--------------|--------------|--------------|
+| `Create Craft` | ✔ | ✔ | ✔ | ✔ | ✔ |
+| `Replace craft` | ✔ | ❌ | ❌ | ❌ | ❌ |
+| `Delete craft` | ✔ | ❌ Not functional since PM 4.18 | ❌ | ❌ | ❌ |

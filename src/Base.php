@@ -78,6 +78,16 @@ class Base extends PluginBase
 
             $split = explode(":", $value["output"]);
             $result = ItemFactory::getInstance()->get($split[0] ?? 0, $split[1] ?? 0, $split[2] ?? 1);
+            
+            $maxLength = max(array_map("strlen", $value["shape"]));;
+
+            foreach ($value["shape"] as $key => $line) {
+                $length = strlen($line);
+
+                if ($maxLength > strlen($length)) {
+                    $value["shape"][$key] = $line . str_repeat(" ", $maxLength - $length);
+                }
+            }
 
             $craftMgr->registerShapedRecipe(new ShapedRecipe(
                 $value["shape"],
