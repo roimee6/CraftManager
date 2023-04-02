@@ -1,7 +1,7 @@
 name: mCraftManager
-main: CraftManager\Base
+main: MaXoooZ\CraftManager\Base
 
-src-namespace-prefix: CraftManager
+src-namespace-prefix: MaXoooZ\CraftManager
 
 author: MaXoooZ
 api: [ 4.0.0 ]

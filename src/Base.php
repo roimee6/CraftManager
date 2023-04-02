@@ -1,6 +1,6 @@
 <?php /** @noinspection PhpUnused */
 
-namespace CraftManager;
+namespace MaXoooZ\CraftManager;
 
 use pocketmine\crafting\ShapedRecipe;
 use pocketmine\crafting\ShapelessRecipe;
