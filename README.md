@@ -1,4 +1,5 @@
 [![Discord](https://img.shields.io/discord/1076553697192071268.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/pocketmine)
+[![](https://poggit.pmmp.io/shield.dl/CraftManager)](https://poggit.pmmp.io/p/CraftManager)
 
 
 ### CraftManager
