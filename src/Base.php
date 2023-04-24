@@ -2,38 +2,62 @@
 
 namespace MaXoooZ\CraftManager;
 
+use MaXoooZ\CraftManager\invmenu\InvMenuHandler;
+use pocketmine\crafting\CraftingRecipe;
 use pocketmine\crafting\ShapedRecipe;
 use pocketmine\crafting\ShapelessRecipe;
 use pocketmine\item\ItemFactory;
+use pocketmine\network\mcpe\cache\CraftingDataCache;
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\Config;
+use pocketmine\utils\SingletonTrait;
 use ReflectionClass;
 use ReflectionProperty;
 
 class Base extends PluginBase
 {
+    use SingletonTrait;
+
+    /**
+     * @var CraftingRecipe[]
+     * @phpstan-var array<int, CraftingRecipe>
+     */
+    public array $recipes;
+
     protected function onLoad(): void
     {
+        self::setInstance($this);
         $this->saveDefaultConfig();
     }
 
     protected function onEnable(): void
     {
-        $config = $this->getConfig();
-
         $craftMgr = $this->getServer()->getCraftingManager();
+        $this->recipes = $craftMgr->getCraftingRecipeIndex();
+
+        $this->refreshCrafts(true);
+
+        if ($this->getConfig()->getNested("craft-manager.enable")) {
+            if (!InvMenuHandler::isRegistered()) {
+                InvMenuHandler::register($this);
+            }
+
+            $this->getServer()->getCommandMap()->register("craftmanager", new CraftManager());
+        }
+    }
+
+    public function refreshCrafts(bool $start): void
+    {
+        $craftMgr = $this->getServer()->getCraftingManager();
+        $crafts = new Config($this->getDataFolder() . "crafts.json", Config::JSON);
+
         $reflectionClass = new ReflectionClass($craftMgr);
 
-        $recipes = $craftMgr->getCraftingRecipeIndex();
+        $recipes = $this->recipes;
         $newRecipes = [];
 
-        $delete = $config->get("delete");
-        $new = $config->get("new");
-
-        foreach ($new as $value) {
-            if ($value["remove-old-crafts"]) {
-                $delete[] = $value["output"];
-            }
-        }
+        $delete = $crafts->get("delete", []);
+        $new = $crafts->get("new", []);
 
         foreach ($recipes as $recipe) {
             $valid = true;
@@ -78,8 +102,8 @@ class Base extends PluginBase
 
             $split = explode(":", $value["output"]);
             $result = ItemFactory::getInstance()->get($split[0] ?? 0, $split[1] ?? 0, $split[2] ?? 1);
-            
-            $maxLength = max(array_map("strlen", $value["shape"]));;
+
+            $maxLength = max(array_map("strlen", $value["shape"]));
 
             foreach ($value["shape"] as $key => $line) {
                 $length = strlen($line);
@@ -94,6 +118,13 @@ class Base extends PluginBase
                 $input,
                 [$result]
             ));
+        }
+
+        if (!$start) {
+            foreach ($this->getServer()->getOnlinePlayers() as $player) {
+                $session = $player->getNetworkSession();
+                $session->sendDataPacket(CraftingDataCache::getInstance()->getCache($craftMgr));
+            }
         }
     }
 }
