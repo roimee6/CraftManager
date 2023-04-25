@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\transaction;
+namespace MaXoooZ\CraftManager\lib\invmenu\transaction;
 
 use Closure;
 use LogicException;

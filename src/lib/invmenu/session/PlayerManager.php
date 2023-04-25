@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\session;
+namespace MaXoooZ\CraftManager\lib\invmenu\session;
 
-use MaXoooZ\CraftManager\invmenu\session\network\handler\PlayerNetworkHandlerRegistry;
-use MaXoooZ\CraftManager\invmenu\session\network\PlayerNetwork;
+use MaXoooZ\CraftManager\lib\invmenu\session\network\handler\PlayerNetworkHandlerRegistry;
+use MaXoooZ\CraftManager\lib\invmenu\session\network\PlayerNetwork;
 use pocketmine\event\EventPriority;
 use pocketmine\event\player\PlayerLoginEvent;
 use pocketmine\event\player\PlayerQuitEvent;

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu;
+namespace MaXoooZ\CraftManager\lib\invmenu;
 
 use InvalidArgumentException;
 use LogicException;
-use MaXoooZ\CraftManager\invmenu\session\PlayerManager;
-use MaXoooZ\CraftManager\invmenu\type\InvMenuTypeRegistry;
+use MaXoooZ\CraftManager\lib\invmenu\session\PlayerManager;
+use MaXoooZ\CraftManager\lib\invmenu\type\InvMenuTypeRegistry;
 use pocketmine\plugin\Plugin;
 use pocketmine\Server;
 

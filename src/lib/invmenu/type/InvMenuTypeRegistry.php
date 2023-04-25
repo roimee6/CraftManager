@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type;
+namespace MaXoooZ\CraftManager\lib\invmenu\type;
 
-use MaXoooZ\CraftManager\invmenu\type\util\InvMenuTypeBuilders;
+use MaXoooZ\CraftManager\lib\invmenu\type\util\InvMenuTypeBuilders;
 use pocketmine\block\VanillaBlocks;
 use pocketmine\network\mcpe\protocol\types\inventory\WindowTypes;
 

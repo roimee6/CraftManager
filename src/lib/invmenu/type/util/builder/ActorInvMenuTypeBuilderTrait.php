@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\util\builder;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\util\builder;
 
-use MaXoooZ\CraftManager\invmenu\type\graphic\network\ActorInvMenuGraphicNetworkTranslator;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\network\ActorInvMenuGraphicNetworkTranslator;
 use pocketmine\entity\Entity;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 use pocketmine\network\mcpe\protocol\types\entity\EntityMetadataCollection;

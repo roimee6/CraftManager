@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\util\builder;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\util\builder;
 
 use LogicException;
 

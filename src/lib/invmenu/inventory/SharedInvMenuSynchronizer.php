@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\inventory;
+namespace MaXoooZ\CraftManager\lib\invmenu\inventory;
 
-use MaXoooZ\CraftManager\invmenu\InvMenu;
+use MaXoooZ\CraftManager\lib\invmenu\InvMenu;
 use pocketmine\inventory\Inventory;
 
 final class SharedInvMenuSynchronizer

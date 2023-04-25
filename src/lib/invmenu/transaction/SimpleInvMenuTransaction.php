@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\transaction;
+namespace MaXoooZ\CraftManager\lib\invmenu\transaction;
 
 use pocketmine\inventory\transaction\action\SlotChangeAction;
 use pocketmine\inventory\transaction\InventoryTransaction;

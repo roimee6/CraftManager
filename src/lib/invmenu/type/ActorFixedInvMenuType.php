@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type;
+namespace MaXoooZ\CraftManager\lib\invmenu\type;
 
-use MaXoooZ\CraftManager\invmenu\inventory\InvMenuInventory;
-use MaXoooZ\CraftManager\invmenu\InvMenu;
-use MaXoooZ\CraftManager\invmenu\type\graphic\ActorInvMenuGraphic;
-use MaXoooZ\CraftManager\invmenu\type\graphic\InvMenuGraphic;
-use MaXoooZ\CraftManager\invmenu\type\graphic\network\InvMenuGraphicNetworkTranslator;
+use MaXoooZ\CraftManager\lib\invmenu\inventory\InvMenuInventory;
+use MaXoooZ\CraftManager\lib\invmenu\InvMenu;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\ActorInvMenuGraphic;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\InvMenuGraphic;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\network\InvMenuGraphicNetworkTranslator;
 use pocketmine\inventory\Inventory;
 use pocketmine\network\mcpe\protocol\types\entity\MetadataProperty;
 use pocketmine\player\Player;

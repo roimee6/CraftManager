@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\inventory;
+namespace MaXoooZ\CraftManager\lib\invmenu\inventory;
 
 use pocketmine\inventory\Inventory;
 use pocketmine\inventory\InventoryListener;

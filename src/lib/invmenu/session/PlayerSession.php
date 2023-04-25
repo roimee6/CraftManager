@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\session;
+namespace MaXoooZ\CraftManager\lib\invmenu\session;
 
 use Closure;
-use MaXoooZ\CraftManager\invmenu\session\network\PlayerNetwork;
+use MaXoooZ\CraftManager\lib\invmenu\session\network\PlayerNetwork;
 use pocketmine\player\Player;
 use function spl_object_id;
 

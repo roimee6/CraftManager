@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu;
+namespace MaXoooZ\CraftManager\lib\invmenu;
 
 use Closure;
 use LogicException;
-use MaXoooZ\CraftManager\invmenu\inventory\SharedInvMenuSynchronizer;
-use MaXoooZ\CraftManager\invmenu\session\InvMenuInfo;
-use MaXoooZ\CraftManager\invmenu\session\network\PlayerNetwork;
-use MaXoooZ\CraftManager\invmenu\transaction\DeterministicInvMenuTransaction;
-use MaXoooZ\CraftManager\invmenu\transaction\InvMenuTransaction;
-use MaXoooZ\CraftManager\invmenu\transaction\InvMenuTransactionResult;
-use MaXoooZ\CraftManager\invmenu\transaction\SimpleInvMenuTransaction;
-use MaXoooZ\CraftManager\invmenu\type\InvMenuType;
-use MaXoooZ\CraftManager\invmenu\type\InvMenuTypeIds;
+use MaXoooZ\CraftManager\lib\invmenu\inventory\SharedInvMenuSynchronizer;
+use MaXoooZ\CraftManager\lib\invmenu\session\InvMenuInfo;
+use MaXoooZ\CraftManager\lib\invmenu\session\network\PlayerNetwork;
+use MaXoooZ\CraftManager\lib\invmenu\transaction\DeterministicInvMenuTransaction;
+use MaXoooZ\CraftManager\lib\invmenu\transaction\InvMenuTransaction;
+use MaXoooZ\CraftManager\lib\invmenu\transaction\InvMenuTransactionResult;
+use MaXoooZ\CraftManager\lib\invmenu\transaction\SimpleInvMenuTransaction;
+use MaXoooZ\CraftManager\lib\invmenu\type\InvMenuType;
+use MaXoooZ\CraftManager\lib\invmenu\type\InvMenuTypeIds;
 use pocketmine\inventory\Inventory;
 use pocketmine\inventory\transaction\action\SlotChangeAction;
 use pocketmine\inventory\transaction\InventoryTransaction;

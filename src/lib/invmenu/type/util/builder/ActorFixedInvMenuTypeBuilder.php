@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\util\builder;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\util\builder;
 
-use MaXoooZ\CraftManager\invmenu\type\ActorFixedInvMenuType;
+use MaXoooZ\CraftManager\lib\invmenu\type\ActorFixedInvMenuType;
 use pocketmine\network\mcpe\protocol\types\entity\EntityMetadataFlags;
 use pocketmine\network\mcpe\protocol\types\entity\EntityMetadataProperties;
 

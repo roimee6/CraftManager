@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\graphic;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\graphic;
 
-use MaXoooZ\CraftManager\invmenu\type\graphic\network\InvMenuGraphicNetworkTranslator;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\network\InvMenuGraphicNetworkTranslator;
 use pocketmine\inventory\Inventory;
 use pocketmine\player\Player;
 

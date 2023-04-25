@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\util\builder;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\util\builder;
 
 use LogicException;
-use MaXoooZ\CraftManager\invmenu\type\DoublePairableBlockActorFixedInvMenuType;
-use MaXoooZ\CraftManager\invmenu\type\graphic\network\BlockInvMenuGraphicNetworkTranslator;
+use MaXoooZ\CraftManager\lib\invmenu\type\DoublePairableBlockActorFixedInvMenuType;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\network\BlockInvMenuGraphicNetworkTranslator;
 
 final class DoublePairableBlockActorFixedInvMenuTypeBuilder implements InvMenuTypeBuilder
 {

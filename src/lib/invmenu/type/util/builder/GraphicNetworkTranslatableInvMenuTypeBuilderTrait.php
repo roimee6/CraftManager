@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\util\builder;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\util\builder;
 
-use MaXoooZ\CraftManager\invmenu\type\graphic\network\InvMenuGraphicNetworkTranslator;
-use MaXoooZ\CraftManager\invmenu\type\graphic\network\MultiInvMenuGraphicNetworkTranslator;
-use MaXoooZ\CraftManager\invmenu\type\graphic\network\WindowTypeInvMenuGraphicNetworkTranslator;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\network\InvMenuGraphicNetworkTranslator;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\network\MultiInvMenuGraphicNetworkTranslator;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\network\WindowTypeInvMenuGraphicNetworkTranslator;
 
 trait GraphicNetworkTranslatableInvMenuTypeBuilderTrait
 {

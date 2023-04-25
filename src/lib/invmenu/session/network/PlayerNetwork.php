@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\session\network;
+namespace MaXoooZ\CraftManager\lib\invmenu\session\network;
 
 use Closure;
 use InvalidArgumentException;
-use MaXoooZ\CraftManager\invmenu\session\InvMenuInfo;
-use MaXoooZ\CraftManager\invmenu\session\network\handler\PlayerNetworkHandler;
-use MaXoooZ\CraftManager\invmenu\session\PlayerSession;
+use MaXoooZ\CraftManager\lib\invmenu\session\InvMenuInfo;
+use MaXoooZ\CraftManager\lib\invmenu\session\network\handler\PlayerNetworkHandler;
+use MaXoooZ\CraftManager\lib\invmenu\session\PlayerSession;
 use pocketmine\block\inventory\BlockInventory;
 use pocketmine\inventory\Inventory;
 use pocketmine\network\mcpe\NetworkSession;

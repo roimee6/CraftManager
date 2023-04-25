@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type;
+namespace MaXoooZ\CraftManager\lib\invmenu\type;
 
-use MaXoooZ\CraftManager\invmenu\inventory\InvMenuInventory;
-use MaXoooZ\CraftManager\invmenu\InvMenu;
-use MaXoooZ\CraftManager\invmenu\type\graphic\BlockActorInvMenuGraphic;
-use MaXoooZ\CraftManager\invmenu\type\graphic\BlockInvMenuGraphic;
-use MaXoooZ\CraftManager\invmenu\type\graphic\InvMenuGraphic;
-use MaXoooZ\CraftManager\invmenu\type\graphic\MultiBlockInvMenuGraphic;
-use MaXoooZ\CraftManager\invmenu\type\graphic\network\InvMenuGraphicNetworkTranslator;
-use MaXoooZ\CraftManager\invmenu\type\util\InvMenuTypeHelper;
+use MaXoooZ\CraftManager\lib\invmenu\inventory\InvMenuInventory;
+use MaXoooZ\CraftManager\lib\invmenu\InvMenu;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\BlockActorInvMenuGraphic;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\BlockInvMenuGraphic;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\InvMenuGraphic;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\MultiBlockInvMenuGraphic;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\network\InvMenuGraphicNetworkTranslator;
+use MaXoooZ\CraftManager\lib\invmenu\type\util\InvMenuTypeHelper;
 use pocketmine\block\Block;
 use pocketmine\block\VanillaBlocks;
 use pocketmine\inventory\Inventory;

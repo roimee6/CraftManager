@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\util\builder;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\util\builder;
 
 use LogicException;
-use MaXoooZ\CraftManager\invmenu\type\BlockActorFixedInvMenuType;
-use MaXoooZ\CraftManager\invmenu\type\graphic\network\BlockInvMenuGraphicNetworkTranslator;
+use MaXoooZ\CraftManager\lib\invmenu\type\BlockActorFixedInvMenuType;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\network\BlockInvMenuGraphicNetworkTranslator;
 
 final class BlockActorFixedInvMenuTypeBuilder implements InvMenuTypeBuilder
 {

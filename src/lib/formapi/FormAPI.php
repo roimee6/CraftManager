@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\formapi;
+namespace MaXoooZ\CraftManager\lib\formapi;
 
 use pocketmine\plugin\PluginBase;
 

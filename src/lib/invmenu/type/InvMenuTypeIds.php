@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type;
+namespace MaXoooZ\CraftManager\lib\invmenu\type;
 
 interface InvMenuTypeIds
 {

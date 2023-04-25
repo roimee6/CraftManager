@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\graphic\network;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\graphic\network;
 
 use InvalidArgumentException;
-use MaXoooZ\CraftManager\invmenu\session\InvMenuInfo;
-use MaXoooZ\CraftManager\invmenu\session\PlayerSession;
-use MaXoooZ\CraftManager\invmenu\type\graphic\PositionedInvMenuGraphic;
+use MaXoooZ\CraftManager\lib\invmenu\session\InvMenuInfo;
+use MaXoooZ\CraftManager\lib\invmenu\session\PlayerSession;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\PositionedInvMenuGraphic;
 use pocketmine\network\mcpe\protocol\ContainerOpenPacket;
 use pocketmine\network\mcpe\protocol\types\BlockPosition;
 

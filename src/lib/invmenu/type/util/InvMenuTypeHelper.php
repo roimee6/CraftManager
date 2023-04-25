@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\util;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\util;
 
 use Generator;
 use pocketmine\block\tile\Chest;

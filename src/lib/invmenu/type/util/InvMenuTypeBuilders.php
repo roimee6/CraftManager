@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\util;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\util;
 
-use MaXoooZ\CraftManager\invmenu\type\util\builder\ActorFixedInvMenuTypeBuilder;
-use MaXoooZ\CraftManager\invmenu\type\util\builder\BlockActorFixedInvMenuTypeBuilder;
-use MaXoooZ\CraftManager\invmenu\type\util\builder\BlockFixedInvMenuTypeBuilder;
-use MaXoooZ\CraftManager\invmenu\type\util\builder\DoublePairableBlockActorFixedInvMenuTypeBuilder;
+use MaXoooZ\CraftManager\lib\invmenu\type\util\builder\ActorFixedInvMenuTypeBuilder;
+use MaXoooZ\CraftManager\lib\invmenu\type\util\builder\BlockActorFixedInvMenuTypeBuilder;
+use MaXoooZ\CraftManager\lib\invmenu\type\util\builder\BlockFixedInvMenuTypeBuilder;
+use MaXoooZ\CraftManager\lib\invmenu\type\util\builder\DoublePairableBlockActorFixedInvMenuTypeBuilder;
 
 final class InvMenuTypeBuilders
 {

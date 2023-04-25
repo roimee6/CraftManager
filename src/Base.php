@@ -2,7 +2,7 @@
 
 namespace MaXoooZ\CraftManager;
 
-use MaXoooZ\CraftManager\invmenu\InvMenuHandler;
+use MaXoooZ\CraftManager\lib\invmenu\InvMenuHandler;
 use pocketmine\crafting\CraftingRecipe;
 use pocketmine\crafting\ShapedRecipe;
 use pocketmine\crafting\ShapelessRecipe;
@@ -30,6 +30,11 @@ class Base extends PluginBase
         $this->saveDefaultConfig();
     }
 
+    public function getCraftsFile(): Config
+    {
+        return new Config($this->getDataFolder() . "crafts.json", Config::JSON);
+    }
+
     protected function onEnable(): void
     {
         $craftMgr = $this->getServer()->getCraftingManager();
@@ -49,7 +54,7 @@ class Base extends PluginBase
     public function refreshCrafts(bool $start): void
     {
         $craftMgr = $this->getServer()->getCraftingManager();
-        $crafts = new Config($this->getDataFolder() . "crafts.json", Config::JSON);
+        $crafts = $this->getCraftsFile();
 
         $reflectionClass = new ReflectionClass($craftMgr);
 

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\session;
+namespace MaXoooZ\CraftManager\lib\invmenu\session;
 
-use MaXoooZ\CraftManager\invmenu\InvMenu;
-use MaXoooZ\CraftManager\invmenu\type\graphic\InvMenuGraphic;
+use MaXoooZ\CraftManager\lib\invmenu\InvMenu;
+use MaXoooZ\CraftManager\lib\invmenu\type\graphic\InvMenuGraphic;
 
 final class InvMenuInfo
 {

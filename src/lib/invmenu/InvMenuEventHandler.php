@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu;
+namespace MaXoooZ\CraftManager\lib\invmenu;
 
-use MaXoooZ\CraftManager\invmenu\session\network\PlayerNetwork;
-use MaXoooZ\CraftManager\invmenu\session\PlayerManager;
+use MaXoooZ\CraftManager\lib\invmenu\session\network\PlayerNetwork;
+use MaXoooZ\CraftManager\lib\invmenu\session\PlayerManager;
 use pocketmine\event\inventory\InventoryCloseEvent;
 use pocketmine\event\inventory\InventoryTransactionEvent;
 use pocketmine\event\Listener;

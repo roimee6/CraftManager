@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\type\graphic;
+namespace MaXoooZ\CraftManager\lib\invmenu\type\graphic;
 
 use pocketmine\math\Vector3;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MaXoooZ\CraftManager\invmenu\session\network;
+namespace MaXoooZ\CraftManager\lib\invmenu\session\network;
 
 use Closure;
 
