@@ -1,10 +1,11 @@
-<?php /** @noinspection PhpUnused */
+<?php /** @noinspection ALL */
 
 namespace MaXoooZ\CraftManager;
 
+use pocketmine\crafting\ExactRecipeIngredient;
 use pocketmine\crafting\ShapedRecipe;
 use pocketmine\crafting\ShapelessRecipe;
-use pocketmine\item\ItemFactory;
+use pocketmine\item\LegacyStringToItemParser;
 use pocketmine\plugin\PluginBase;
 use ReflectionClass;
 use ReflectionProperty;
@@ -46,11 +47,9 @@ class Base extends PluginBase
                         $id = $split[0];
                         $meta = $split[1] ?? 0;
 
-                        if ($item->getId() == $id) {
-                            if (0 > $meta && $meta === $item->getId()) {
-                                continue;
-                            }
+                        $itemToDelete = LegacyStringToItemParser::getInstance()->parse("$id:$meta");
 
+                        if ($item->equals($itemToDelete)) {
                             $valid = false;
                         }
                     }
@@ -73,13 +72,14 @@ class Base extends PluginBase
         foreach ($new as $value) {
             $input = array_map(function (string $data) {
                 $split = explode(":", $data);
-                return ItemFactory::getInstance()->get($split[0] ?? 0, $split[1] ?? 0, $split[2] ?? 1);
+                $item = LegacyStringToItemParser::getInstance()->parse($split[0] ?? 0 . ":" . $split[1] ?? 0)->setCount($split[2] ?? 1);
+                return new ExactRecipeIngredient($item);
             }, $value["input"]);
 
             $split = explode(":", $value["output"]);
-            $result = ItemFactory::getInstance()->get($split[0] ?? 0, $split[1] ?? 0, $split[2] ?? 1);
-            
-            $maxLength = max(array_map("strlen", $value["shape"]));;
+            $result = LegacyStringToItemParser::getInstance()->parse($split[0] ?? 0 . ":" . $split[1] ?? 0)->setCount($split[2] ?? 1);
+
+            $maxLength = max(array_map("strlen", $value["shape"]));
 
             foreach ($value["shape"] as $key => $line) {
                 $length = strlen($line);

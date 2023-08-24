@@ -3,9 +3,11 @@ main: MaXoooZ\CraftManager\Base
 
 src-namespace-prefix: MaXoooZ\CraftManager
 
-author: MaXoooZ
-api: [ 4.0.0 ]
-version: 1.0.0
+authors:
+  - MaXoooZ
+  - Myma
+api: [ 5.0.0 ]
+version: 1.0.1
 
 # Plugin shop
 website: https://discord.gg/pocketmine
