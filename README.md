@@ -21,24 +21,23 @@ Finally, if you are looking for private plugins at a good price, I can make some
 # All items you want to remove from the workbench
 # You can set the meta "-1" or not set it all to include all items
 delete:
-  - "id:meta"
-  - "id"
+  - "Wooden Pickaxe"
 
 new:
   -
     # Organization on the 9 slots in the workbench
     shape:
-      - "A"
-      - "A"
-      - "B"
+      - " A "
+      - " A "
+      - " B "
 
     # All items that relate to the letters you entered just above ^
     input:
-      A: "133:0"
-      B: "280:0"
+      A: "Stone"
+      B: "Cobblestone"
 
     # Item that will be given when the player makes the craft
-    output: "283:0:1"
+    output: "Diamond:1"
 
     # Are the crafts for the basic item removed?
     remove-old-crafts: true

@@ -6,6 +6,7 @@ use pocketmine\crafting\ExactRecipeIngredient;
 use pocketmine\crafting\ShapedRecipe;
 use pocketmine\crafting\ShapelessRecipe;
 use pocketmine\item\LegacyStringToItemParser;
+use pocketmine\item\StringToItemParser;
 use pocketmine\plugin\PluginBase;
 use ReflectionClass;
 use ReflectionProperty;
@@ -44,10 +45,9 @@ class Base extends PluginBase
                     foreach ($delete as $value) {
                         $split = explode(":", $value);
 
-                        $id = $split[0];
-                        $meta = $split[1] ?? 0;
+                        $itemName = $split[0];
 
-                        $itemToDelete = LegacyStringToItemParser::getInstance()->parse("$id:$meta");
+                        $itemToDelete = StringToItemParser::getInstance()->parse($itemName);
 
                         if ($item->equals($itemToDelete)) {
                             $valid = false;
@@ -72,12 +72,12 @@ class Base extends PluginBase
         foreach ($new as $value) {
             $input = array_map(function (string $data) {
                 $split = explode(":", $data);
-                $item = LegacyStringToItemParser::getInstance()->parse($split[0] ?? 0 . ":" . $split[1] ?? 0)->setCount($split[2] ?? 1);
+                $item = StringToItemParser::getInstance()->parse($split[0]);
                 return new ExactRecipeIngredient($item);
             }, $value["input"]);
 
             $split = explode(":", $value["output"]);
-            $result = LegacyStringToItemParser::getInstance()->parse($split[0] ?? 0 . ":" . $split[1] ?? 0)->setCount($split[2] ?? 1);
+            $result = StringToItemParser::getInstance()->parse($split[0])->setCount($split[1] ?? 1);
 
             $maxLength = max(array_map("strlen", $value["shape"]));
 
